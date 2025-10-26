@@ -1,0 +1,66 @@
+baseURL = "https://aftabakram.com/"
+languageCode = "en-us"
+title = "Aftab."
+theme = "PaperMod"
+
+enableRobotsTXT = true
+[pagination]
+  pagerSize = 10
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  defaultTheme = "auto"
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  env = "production"          
+  description = "A blog about tech, research papers, product reviews, and tutorials."
+  keywords = ["Tech Blog", "AI Papers", "Product Reviews", "Tutorials"]
+  author = "Aftab Akram"
+
+  # Open Graph + Twitter
+  images = ["images/og-image.png"]
+
+  # Enable search
+  [params.search]
+    enabled = true
+    provider = "lunr" # options: "lunr" (local JS search) or "algolia"
+
+    [params.search.lunr]
+      # fields that should be indexed
+      fields = ["title", "summary", "content", "tags", "categories"]
+      # only include regular posts
+      includePages = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 4
