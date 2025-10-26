@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rails on Aftab.</title><link>https://aftabakram.com/tags/rails/</link><description>Recent content in Rails on Aftab.</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 19 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aftabakram.com/tags/rails/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Deploy AWS Auto Scaling Group using Capistrano 3</title><link>https://aftabakram.com/tutorials/aws-autoscale-capistrano3/</link><pubDate>Sun, 19 Sep 2021 00:00:00 +0000</pubDate><guid>https://aftabakram.com/tutorials/aws-autoscale-capistrano3/</guid><description>&lt;h3 id="motivation">Motivation&lt;/h3>
+&lt;p>If you&amp;rsquo;ve set up an AWS Auto Scaling Group and need to deploy code to those running EC2 instances, this Capistrano task can streamline the process by targeting only healthy nodes in the group.&lt;/p>
+&lt;hr>
+&lt;h3 id="requirements">Requirements&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>aws-sdk-ec2 ~&amp;gt; 1&lt;/code>&lt;/li>
+&lt;li>&lt;code>aws-sdk-autoscaling ~&amp;gt; 1&lt;/code>&lt;/li>
+&lt;li>&lt;code>capistrano ~&amp;gt; 3&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="installation">Installation&lt;/h3>
+&lt;p>In your Rails app&amp;rsquo;s &lt;code>Gemfile&lt;/code>, add:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="display:flex;">&lt;span>gem &lt;span style="color:#e6db74">&amp;#39;capistrano3-asg-deploy&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>bundle install
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Or install it yourself as:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="display:flex;">&lt;span>gem install capistrano3&lt;span style="color:#f92672">-&lt;/span>asg&lt;span style="color:#f92672">-&lt;/span>deploy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Add this line to your application’s Capfile:&lt;/p></description></item></channel></rss>
