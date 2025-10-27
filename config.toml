@@ -25,6 +25,7 @@ enableRobotsTXT = true
   description = "A blog about tech, research papers, product reviews, and tutorials."
   keywords = ["Tech Blog", "AI Papers", "Product Reviews", "Tutorials"]
   author = "Aftab Akram"
+  googleAnalytics = "G-B8C4TXKK25"
 
   # Open Graph + Twitter
   images = ["images/og-image.png"]
